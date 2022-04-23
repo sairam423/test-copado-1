@@ -181,6 +181,123 @@
     <searchLayouts/>
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>sample</fullName>
+        <fields>Name</fields>
+        <fields>Dist__c</fields>
+        <fields>Email__c</fields>
+        <label>sample</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Sample_2</fullName>
+        <fields>Name</fields>
+        <fields>Dist__c</fields>
+        <fields>State__c</fields>
+        <label>Sample 2</label>
+    </compactLayouts>
+    <fieldSets>
+        <fullName>Sample_FS</fullName>
+        <description>Lightning pages</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Dist__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Sample FS</label>
+    </fieldSets>
+    <fields>
+        <fullName>Dist__c</fullName>
+        <externalId>false</externalId>
+        <label>Dist</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RR</fullName>
+                    <default>false</default>
+                    <label>RR</label>
+                </value>
+                <value>
+                    <fullName>Hyd</fullName>
+                    <default>false</default>
+                    <label>Hyd</label>
+                </value>
+                <value>
+                    <fullName>Wl</fullName>
+                    <default>false</default>
+                    <label>Wl</label>
+                </value>
+                <value>
+                    <fullName>KR</fullName>
+                    <default>false</default>
+                    <label>KR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TS</fullName>
+                    <default>false</default>
+                    <label>TS</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>AP</label>
+                </value>
+                <value>
+                    <fullName>KA</fullName>
+                    <default>false</default>
+                    <label>KA</label>
+                </value>
+                <value>
+                    <fullName>KL</fullName>
+                    <default>false</default>
+                    <label>KL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <fields>
         <fullName>external_id__c</fullName>
         <externalId>true</externalId>
@@ -190,6 +307,15 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>last_modified_email__c</fullName>
+        <defaultValue>$Profile.LastModifiedDate</defaultValue>
+        <externalId>false</externalId>
+        <label>last modified email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>total_no_of_students__c</fullName>
@@ -202,6 +328,78 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <recordTypes>
+        <fullName>Sample_1</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Sample_2</compactLayoutAssignment>
+        <label>Sample 1</label>
+        <picklistValues>
+            <picklist>Dist__c</picklist>
+            <values>
+                <fullName>Hyd</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wl</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>AP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sample_2</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Sample_2</compactLayoutAssignment>
+        <label>Sample 2</label>
+        <picklistValues>
+            <picklist>Dist__c</picklist>
+            <values>
+                <fullName>KR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wl</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>AP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <validationRules>
         <fullName>Sample_Rule</fullName>
         <active>false</active>
