@@ -163,8 +163,6 @@
     <pluralLabel>BUILDING INFORMATIONS</pluralLabel>
     <profileSearchLayouts>
         <fields>NAME</fields>
-        <fields>VACANT_FLATS__c</fields>
-        <fields>RENT__c</fields>
         <profileName>System Administrator</profileName>
     </profileSearchLayouts>
     <searchLayouts/>
