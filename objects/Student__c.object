@@ -168,16 +168,6 @@
         <fields>OWNER.FIRST_NAME</fields>
         <profileName>System Administrator</profileName>
     </profileSearchLayouts>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>Email__c</fields>
-        <fields>State__c</fields>
-        <fields>Dist__c</fields>
-        <fields>OWNER.ALIAS</fields>
-        <fields>OWNER.FIRST_NAME</fields>
-        <fields>OWNER.LAST_NAME</fields>
-        <profileName>INNSURANCEJOB</profileName>
-    </profileSearchLayouts>
     <searchLayouts/>
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
